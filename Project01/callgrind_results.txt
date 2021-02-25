@@ -1,0 +1,725 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind1.out' (creator: callgrind-3.13.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 6151739
+Trigger: Program termination
+Profiled target:  ./main Lenna_org_256.pgm 0.6 (PID 10166, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       100
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+        Ir 
+--------------------------------------------------------------------------------
+32,426,345  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+        Ir  file:function
+--------------------------------------------------------------------------------
+12,316,240  ???:convolveHoriz [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+ 9,563,746  ???:convolveVert [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+ 5,424,797  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/ieee754/dbl-64/e_atan2.c:__ieee754_atan2_fma [/lib/x86_64-linux-gnu/libm-2.27.so]
+ 1,900,770  ???:main [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+ 1,704,412  /build/glibc-OTsEL5/glibc-2.27/math/w_atan2_compat.c:atan2 [/lib/x86_64-linux-gnu/libm-2.27.so]
+   664,032  ???:write_image_template [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+   342,380  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/i386/fpu/fenv_private.h:__ieee754_atan2_fma
+   171,190  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/generic/math_private_calls.h:__ieee754_atan2_fma
+    77,892  ???:read_image_template [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+    59,305  /build/glibc-OTsEL5/glibc-2.27/elf/dl-addr.c:_dl_addr [/lib/x86_64-linux-gnu/libc-2.27.so]
+    38,863  /build/glibc-OTsEL5/glibc-2.27/elf/dl-lookup.c:do_lookup_x [/lib/x86_64-linux-gnu/ld-2.27.so]
+    24,087  /build/glibc-OTsEL5/glibc-2.27/elf/dl-lookup.c:_dl_lookup_symbol_x [/lib/x86_64-linux-gnu/ld-2.27.so]
+    19,780  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+    18,934  /build/glibc-OTsEL5/glibc-2.27/elf/dl-tunables.c:__GI___tunables_init [/lib/x86_64-linux-gnu/ld-2.27.so]
+    15,526  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/strcmp.S:strcmp [/lib/x86_64-linux-gnu/ld-2.27.so]
+    10,580  /build/glibc-OTsEL5/glibc-2.27/elf/do-rel.h:_dl_relocate_object
+     4,949  /build/glibc-OTsEL5/glibc-2.27/elf/dl-tunables.h:__GI___tunables_init
+     4,356  /build/glibc-OTsEL5/glibc-2.27/malloc/malloc.c:_int_malloc [/lib/x86_64-linux-gnu/libc-2.27.so]
+     3,658  /build/glibc-OTsEL5/glibc-2.27/elf/dl-misc.c:_dl_name_match_p [/lib/x86_64-linux-gnu/ld-2.27.so]
+     3,480  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__mempcpy_avx_unaligned_erms [/lib/x86_64-linux-gnu/libc-2.27.so]
+     2,964  /build/glibc-OTsEL5/glibc-2.27/elf/dl-version.c:_dl_check_map_versions [/lib/x86_64-linux-gnu/ld-2.27.so]
+     2,760  /build/glibc-OTsEL5/glibc-2.27/stdio-common/vfprintf.c:vfprintf [/lib/x86_64-linux-gnu/libc-2.27.so]
+     2,658  /build/glibc-OTsEL5/glibc-2.27/malloc/malloc.c:free [/lib/x86_64-linux-gnu/libc-2.27.so]
+     2,298  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_overflow@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.27.so]
+     2,224  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_xsputn@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.27.so]
+     1,870  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_default_xsputn [/lib/x86_64-linux-gnu/libc-2.27.so]
+     1,435  /build/glibc-OTsEL5/glibc-2.27/malloc/malloc.c:malloc [/lib/x86_64-linux-gnu/libc-2.27.so]
+     1,389  /build/glibc-OTsEL5/glibc-2.27/elf/dl-deps.c:_dl_map_object_deps [/lib/x86_64-linux-gnu/ld-2.27.so]
+     1,243  /build/glibc-OTsEL5/glibc-2.27/elf/dl-load.c:_dl_map_object_from_fd [/lib/x86_64-linux-gnu/ld-2.27.so]
+     1,170  /build/glibc-OTsEL5/glibc-2.27/elf/dl-cache.c:_dl_cache_libcmp [/lib/x86_64-linux-gnu/ld-2.27.so]
+       934  /build/glibc-OTsEL5/glibc-2.27/elf/rtld.c:dl_main [/lib/x86_64-linux-gnu/ld-2.27.so]
+       916  /build/glibc-OTsEL5/glibc-2.27/elf/dl-load.c:_dl_map_object [/lib/x86_64-linux-gnu/ld-2.27.so]
+       893  /build/glibc-OTsEL5/glibc-2.27/elf/dl-load.c:open_verify.constprop.7 [/lib/x86_64-linux-gnu/ld-2.27.so]
+       893  /build/glibc-OTsEL5/glibc-2.27/elf/get-dynamic-info.h:_dl_map_object_from_fd
+       886  /build/glibc-OTsEL5/glibc-2.27/malloc/malloc.c:ptmalloc_init.part.0
+       819  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_do_write@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       773  /build/glibc-OTsEL5/glibc-2.27/elf/dl-object.c:_dl_new_object [/lib/x86_64-linux-gnu/ld-2.27.so]
+       768  /build/glibc-OTsEL5/glibc-2.27/elf/dl-load.c:open_path [/lib/x86_64-linux-gnu/ld-2.27.so]
+       767  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86/cacheinfo.c:intel_check_word.isra.0 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       763  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_un_link [/lib/x86_64-linux-gnu/libc-2.27.so]
+       714  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_link_in [/lib/x86_64-linux-gnu/libc-2.27.so]
+       684  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_write@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       614  /build/glibc-OTsEL5/glibc-2.27/elf/dl-sort-maps.c:_dl_sort_maps [/lib/x86_64-linux-gnu/ld-2.27.so]
+       607  /build/glibc-OTsEL5/glibc-2.27/elf/dl-reloc.c:_dl_relocate_object [/lib/x86_64-linux-gnu/ld-2.27.so]
+       604  /build/glibc-OTsEL5/glibc-2.27/malloc/malloc.c:sysmalloc [/lib/x86_64-linux-gnu/libc-2.27.so]
+       593  /build/glibc-OTsEL5/glibc-2.27/misc/../sysdeps/unix/sysv/linux/mmap64.c:mmap [/lib/x86_64-linux-gnu/ld-2.27.so]
+       582  /build/glibc-OTsEL5/glibc-2.27/string/../bits/stdlib-bsearch.h:intel_check_word.isra.0
+       575  /build/glibc-OTsEL5/glibc-2.27/elf/dl-hwcaps.c:_dl_important_hwcaps [/lib/x86_64-linux-gnu/ld-2.27.so]
+       564  /build/glibc-OTsEL5/glibc-2.27/elf/dl-cache.c:_dl_load_cache_lookup [/lib/x86_64-linux-gnu/ld-2.27.so]
+       558  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_fopen@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       552  /build/glibc-OTsEL5/glibc-2.27/stdio-common/_itoa.c:_itoa_word [/lib/x86_64-linux-gnu/libc-2.27.so]
+       544  /build/glibc-OTsEL5/glibc-2.27/elf/dl-minimal.c:malloc [/lib/x86_64-linux-gnu/ld-2.27.so]
+       498  /build/glibc-OTsEL5/glibc-2.27/elf/../elf/dl-sysdep.c:_dl_sysdep_start [/lib/x86_64-linux-gnu/ld-2.27.so]
+       466  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/../strlen.S:strlen [/lib/x86_64-linux-gnu/ld-2.27.so]
+       463  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:memset [/lib/x86_64-linux-gnu/ld-2.27.so]
+       430  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/open64.c:open [/lib/x86_64-linux-gnu/libc-2.27.so]
+       399  /build/glibc-OTsEL5/glibc-2.27/libio/iofclose.c:fclose@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       398  /build/glibc-OTsEL5/glibc-2.27/elf/dl-environ.c:_dl_next_ld_env_entry [/lib/x86_64-linux-gnu/ld-2.27.so]
+       396  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strchr-avx2.S:__strchrnul_avx2 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       389  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86_64/dl-machine.h:_dl_start
+       388  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:mempcpy [/lib/x86_64-linux-gnu/ld-2.27.so]
+       383  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_close_it@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       364  /build/glibc-OTsEL5/glibc-2.27/stdlib/strtod_l.c:____strtod_l_internal [/lib/x86_64-linux-gnu/libc-2.27.so]
+       363  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/generic/ldsodefs.h:_dl_relocate_object
+       358  /build/glibc-OTsEL5/glibc-2.27/libio/filedoalloc.c:_IO_file_doallocate [/lib/x86_64-linux-gnu/libc-2.27.so]
+       347  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_setb [/lib/x86_64-linux-gnu/libc-2.27.so]
+       340  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/ieee754/dbl-64/e_exp.c:__ieee754_exp_fma [/lib/x86_64-linux-gnu/libm-2.27.so]
+       336  /build/glibc-OTsEL5/glibc-2.27/libio/iofwrite.c:fwrite [/lib/x86_64-linux-gnu/libc-2.27.so]
+       330  /build/glibc-OTsEL5/glibc-2.27/elf/../elf/dl-tls.c:_dl_allocate_tls_storage [/lib/x86_64-linux-gnu/ld-2.27.so]
+       327  /build/glibc-OTsEL5/glibc-2.27/elf/get-dynamic-info.h:dl_main
+       327  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/generic/ldsodefs.h:do_lookup_x
+       325  /build/glibc-OTsEL5/glibc-2.27/elf/dl-fini.c:_dl_fini [/lib/x86_64-linux-gnu/ld-2.27.so]
+       325  /build/glibc-OTsEL5/glibc-2.27/elf/dl-tunables.c:__tunable_get_val [/lib/x86_64-linux-gnu/ld-2.27.so]
+       317  /build/glibc-OTsEL5/glibc-2.27/elf/dl-load.c:_dl_init_paths [/lib/x86_64-linux-gnu/ld-2.27.so]
+       306  /build/glibc-OTsEL5/glibc-2.27/debug/fprintf_chk.c:__fprintf_chk [/lib/x86_64-linux-gnu/libc-2.27.so]
+       302  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/../strchr.S:index [/lib/x86_64-linux-gnu/ld-2.27.so]
+       296  /build/glibc-OTsEL5/glibc-2.27/elf/do-rel.h:_dl_start
+       292  /build/glibc-OTsEL5/glibc-2.27/elf/./dl-map-segments.h:_dl_map_object_from_fd
+       287  /build/glibc-OTsEL5/glibc-2.27/libio/iofopen.c:fopen@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       268  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_default_xsputn
+       264  /build/glibc-OTsEL5/glibc-2.27/stdlib/../stdlib/strtol_l.c:____strtol_l_internal [/lib/x86_64-linux-gnu/libc-2.27.so]
+       247  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86/cacheinfo.c:init_cacheinfo [/lib/x86_64-linux-gnu/libc-2.27.so]
+       244  /build/glibc-OTsEL5/glibc-2.27/elf/dl-minimal.c:strsep [/lib/x86_64-linux-gnu/ld-2.27.so]
+       241  /build/glibc-OTsEL5/glibc-2.27/elf/get-dynamic-info.h:_dl_start
+       235  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:memcpy [/lib/x86_64-linux-gnu/ld-2.27.so]
+       231  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_no_init [/lib/x86_64-linux-gnu/libc-2.27.so]
+       224  /build/glibc-OTsEL5/glibc-2.27/elf/dl-init.c:_dl_init [/lib/x86_64-linux-gnu/ld-2.27.so]
+       218  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/strcspn.S:strcspn [/lib/x86_64-linux-gnu/ld-2.27.so]
+       198  /build/glibc-OTsEL5/glibc-2.27/libio/iogetline.c:_IO_getline [/lib/x86_64-linux-gnu/libc-2.27.so]
+       189  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_old_init [/lib/x86_64-linux-gnu/libc-2.27.so]
+       186  /build/glibc-OTsEL5/glibc-2.27/elf/dl-error-skeleton.c:_dl_catch_exception [/lib/x86_64-linux-gnu/ld-2.27.so]
+       185  /build/glibc-OTsEL5/glibc-2.27/elf/dl-load.c:fillin_rpath [/lib/x86_64-linux-gnu/ld-2.27.so]
+       177  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86/cacheinfo.c:handle_intel.constprop.1 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       175  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_default_finish [/lib/x86_64-linux-gnu/libc-2.27.so]
+       175  /build/glibc-OTsEL5/glibc-2.27/string/../string/strstr.c:__GI_strstr [/lib/x86_64-linux-gnu/libc-2.27.so]
+       175  /build/glibc-OTsEL5/glibc-2.27/malloc/malloc.c:systrim.isra.1.constprop.11 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       174  /build/glibc-OTsEL5/glibc-2.27/stdio-common/../libio/libioP.h:vfprintf
+       174  /build/glibc-OTsEL5/glibc-2.27/stdlib/cxa_finalize.c:__cxa_finalize [/lib/x86_64-linux-gnu/libc-2.27.so]
+       171  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/write.c:write [/lib/x86_64-linux-gnu/libc-2.27.so]
+       162  /build/glibc-OTsEL5/glibc-2.27/libio/iofgets.c:fgets [/lib/x86_64-linux-gnu/libc-2.27.so]
+       156  ???:gaussianDerivKernel [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+       152  /build/glibc-OTsEL5/glibc-2.27/elf/../elf/dl-runtime.c:_dl_fixup [/lib/x86_64-linux-gnu/ld-2.27.so]
+       146  /build/glibc-OTsEL5/glibc-2.27/elf/dl-object.c:_dl_add_to_namespace_list [/lib/x86_64-linux-gnu/ld-2.27.so]
+       145  ???:gaussianKernel [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+       144  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_doallocbuf [/lib/x86_64-linux-gnu/libc-2.27.so]
+       139  /build/glibc-OTsEL5/glibc-2.27/setjmp/../sysdeps/x86_64/setjmp.S:__sigsetjmp [/lib/x86_64-linux-gnu/ld-2.27.so]
+       138  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_cleanup [/lib/x86_64-linux-gnu/libc-2.27.so]
+       126  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:fclose@@GLIBC_2.2.5
+       120  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:_fxstat [/lib/x86_64-linux-gnu/ld-2.27.so]
+       115  /build/glibc-OTsEL5/glibc-2.27/elf/dl-lookup.c:_dl_setup_hash [/lib/x86_64-linux-gnu/ld-2.27.so]
+       110  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_flush_all_lockp [/lib/x86_64-linux-gnu/libc-2.27.so]
+       108  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:fwrite
+       107  /build/glibc-OTsEL5/glibc-2.27/malloc/malloc.c:tcache_init.part.4 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       107  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_xsgetn [/lib/x86_64-linux-gnu/libc-2.27.so]
+       105  /build/glibc-OTsEL5/glibc-2.27/stdlib/exit.c:__run_exit_handlers [/lib/x86_64-linux-gnu/libc-2.27.so]
+       105  /build/glibc-OTsEL5/glibc-2.27/malloc/arena.c:ptmalloc_init.part.0 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       104  /build/glibc-OTsEL5/glibc-2.27/elf/../elf/dl-tls.c:_dl_allocate_tls_init [/lib/x86_64-linux-gnu/ld-2.27.so]
+       103  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86/cpu-features.c:_dl_sysdep_start
+       103  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_file_xsputn@@GLIBC_2.2.5
+       102  /build/glibc-OTsEL5/glibc-2.27/stdio-common/printf-parse.h:vfprintf
+       101  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_underflow@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.27.so]
+       101  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/wordsize-64/xstat.c:_xstat [/lib/x86_64-linux-gnu/ld-2.27.so]
+        96  /build/glibc-OTsEL5/glibc-2.27/math/w_exp_compat.c:exp [/lib/x86_64-linux-gnu/libm-2.27.so]
+        96  /build/glibc-OTsEL5/glibc-2.27/string/strtok_r.c:strtok_r [/lib/x86_64-linux-gnu/libc-2.27.so]
+        91  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_new_file_init_internal [/lib/x86_64-linux-gnu/libc-2.27.so]
+        90  /build/glibc-OTsEL5/glibc-2.27/elf/dl-minimal.c:calloc [/lib/x86_64-linux-gnu/ld-2.27.so]
+        88  ???:read_image [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+        87  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86/cpu-features.c:get_common_indeces.constprop.1 [/lib/x86_64-linux-gnu/ld-2.27.so]
+        85  /build/glibc-OTsEL5/glibc-2.27/elf/dl-deps.c:openaux [/lib/x86_64-linux-gnu/ld-2.27.so]
+        84  /build/glibc-OTsEL5/glibc-2.27/elf/dl-version.c:_dl_check_all_versions [/lib/x86_64-linux-gnu/ld-2.27.so]
+        84  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_finish@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.27.so]
+        83  /build/glibc-OTsEL5/glibc-2.27/elf/rtld.c:_dl_start [/lib/x86_64-linux-gnu/ld-2.27.so]
+        82  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_discover_osversion [/lib/x86_64-linux-gnu/ld-2.27.so]
+        81  /build/glibc-OTsEL5/glibc-2.27/elf/rtld.c:init_tls [/lib/x86_64-linux-gnu/ld-2.27.so]
+        80  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave [/lib/x86_64-linux-gnu/ld-2.27.so]
+        72  /build/glibc-OTsEL5/glibc-2.27/string/strdup.c:strdup [/lib/x86_64-linux-gnu/ld-2.27.so]
+        72  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/i386/fpu/fenv_private.h:__ieee754_exp_fma
+        71  /build/glibc-OTsEL5/glibc-2.27/elf/./dl-load.h:_dl_map_object_from_fd
+        69  /build/glibc-OTsEL5/glibc-2.27/elf/rtld.c:handle_ld_preload [/lib/x86_64-linux-gnu/ld-2.27.so]
+        68  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/unix/sysv/linux/dl-vdso.c:_dl_vdso_vsym [/lib/x86_64-linux-gnu/libc-2.27.so]
+        67  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/memcmp.S:bcmp [/lib/x86_64-linux-gnu/ld-2.27.so]
+        67  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcspn-c.c:__strcspn_sse42 [/lib/x86_64-linux-gnu/libc-2.27.so]
+        66  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/lib/x86_64-linux-gnu/libc-2.27.so]
+        66  /build/glibc-OTsEL5/glibc-2.27/debug/../libio/libioP.h:__fprintf_chk
+        66  /build/glibc-OTsEL5/glibc-2.27/elf/../elf/dl-tls.c:_dl_determine_tlsoffset [/lib/x86_64-linux-gnu/ld-2.27.so]
+        65  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strspn-c.c:__strspn_sse42 [/lib/x86_64-linux-gnu/libc-2.27.so]
+        60  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/ieee754/dbl-64/wordsize-64/s_round.c:round [/lib/x86_64-linux-gnu/libm-2.27.so]
+        56  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_doallocbuf
+        56  /build/glibc-OTsEL5/glibc-2.27/libio/ioputs.c:puts [/lib/x86_64-linux-gnu/libc-2.27.so]
+        56  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_file_doallocate
+        55  /build/glibc-OTsEL5/glibc-2.27/csu/../csu/libc-start.c:(below main) [/lib/x86_64-linux-gnu/libc-2.27.so]
+        54  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memchr-avx2.S:__memchr_avx2 [/lib/x86_64-linux-gnu/libc-2.27.so]
+        54  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/posix/dl-fileid.h:_dl_map_object_from_fd
+        52  /build/glibc-OTsEL5/glibc-2.27/stdlib/strtod_l.c:str_to_mpn.isra.0 [/lib/x86_64-linux-gnu/libc-2.27.so]
+        51  /build/glibc-OTsEL5/glibc-2.27/elf/dl-open.c:_dl_find_dso_for_object [/lib/x86_64-linux-gnu/ld-2.27.so]
+        50  /build/glibc-OTsEL5/glibc-2.27/malloc/malloc.c:malloc_hook_ini
+        49  /build/glibc-OTsEL5/glibc-2.27/elf/dl-debug.c:_dl_debug_initialize [/lib/x86_64-linux-gnu/ld-2.27.so]
+        49  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_file_close_it@@GLIBC_2.2.5
+        48  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_switch_to_get_mode [/lib/x86_64-linux-gnu/libc-2.27.so]
+        48  /build/glibc-OTsEL5/glibc-2.27/nptl/unregister-atfork.c:__unregister_atfork [/lib/x86_64-linux-gnu/libc-2.27.so]
+        48  /build/glibc-OTsEL5/glibc-2.27/misc/sbrk.c:sbrk [/lib/x86_64-linux-gnu/libc-2.27.so]
+        47  /build/glibc-OTsEL5/glibc-2.27/stdlib/strtod_l.c:round_and_return [/lib/x86_64-linux-gnu/libc-2.27.so]
+        44  /build/glibc-OTsEL5/glibc-2.27/csu/../sysdeps/generic/dl-hash.h:_init
+        44  /build/glibc-OTsEL5/glibc-2.27/time/../sysdeps/generic/dl-hash.h:gettimeofday
+        44  /build/glibc-OTsEL5/glibc-2.27/libio/iofread.c:fread [/lib/x86_64-linux-gnu/libc-2.27.so]
+        44  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_default_setbuf [/lib/x86_64-linux-gnu/libc-2.27.so]
+        43  /build/glibc-OTsEL5/glibc-2.27/time/../sysdeps/generic/dl-hash.h:time
+        42  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_unsave_markers [/lib/x86_64-linux-gnu/libc-2.27.so]
+        42  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/read.c:read [/lib/x86_64-linux-gnu/ld-2.27.so]
+        41  /build/glibc-OTsEL5/glibc-2.27/elf/dl-misc.c:_dl_sysdep_read_whole_file [/lib/x86_64-linux-gnu/ld-2.27.so]
+        40  /build/glibc-OTsEL5/glibc-2.27/misc/../sysdeps/unix/syscall-template.S:mprotect [/lib/x86_64-linux-gnu/ld-2.27.so]
+        38  /build/glibc-OTsEL5/glibc-2.27/elf/dl-load.c:expand_dynamic_string_token [/lib/x86_64-linux-gnu/ld-2.27.so]
+        38  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strlen-avx2.S:__strlen_avx2 [/lib/x86_64-linux-gnu/libc-2.27.so]
+        36  /build/glibc-OTsEL5/glibc-2.27/stdlib/cxa_atexit.c:__cxa_atexit [/lib/x86_64-linux-gnu/libc-2.27.so]
+        35  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/close.c:__close_nocancel [/lib/x86_64-linux-gnu/libc-2.27.so]
+        34  ???:__libc_csu_init [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+        32  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-memmove.h:memmove [/lib/x86_64-linux-gnu/libc-2.27.so]
+        32  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_stat [/lib/x86_64-linux-gnu/libc-2.27.so]
+        32  /build/glibc-OTsEL5/glibc-2.27/csu/../csu/init-first.c:_init [/lib/x86_64-linux-gnu/libc-2.27.so]
+        30  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:__underflow [/lib/x86_64-linux-gnu/libc-2.27.so]
+        30  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:__uflow [/lib/x86_64-linux-gnu/libc-2.27.so]
+        30  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:fgets
+        30  /build/glibc-OTsEL5/glibc-2.27/stdlib/../sysdeps/x86_64/lshift.S:__mpn_lshift [/lib/x86_64-linux-gnu/libc-2.27.so]
+        29  /build/glibc-OTsEL5/glibc-2.27/stdlib/cxa_atexit.c:__new_exitfn [/lib/x86_64-linux-gnu/libc-2.27.so]
+        27  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strrchr-avx2.S:__strrchr_avx2 [/lib/x86_64-linux-gnu/libc-2.27.so]
+        26  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_do_write@@GLIBC_2.2.5
+        25  /build/glibc-OTsEL5/glibc-2.27/misc/init-misc.c:__init_misc [/lib/x86_64-linux-gnu/libc-2.27.so]
+        25  /build/glibc-OTsEL5/glibc-2.27/misc/../sysdeps/unix/syscall-template.S:munmap [/lib/x86_64-linux-gnu/ld-2.27.so]
+        24  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/ifunc-wmemset.h:wmemset [/lib/x86_64-linux-gnu/libc-2.27.so]
+        24  /build/glibc-OTsEL5/glibc-2.27/misc/../sysdeps/unix/sysv/linux/x86_64/brk.c:brk [/lib/x86_64-linux-gnu/libc-2.27.so]
+        24  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86/dl-procinfo.h:_dl_load_cache_lookup
+        23  /build/glibc-OTsEL5/glibc-2.27/elf/dl-error-skeleton.c:_dl_catch_error [/lib/x86_64-linux-gnu/ld-2.27.so]
+        23  /build/glibc-OTsEL5/glibc-2.27/csu/../sysdeps/unix/sysv/linux/x86_64/init-first.c:_init
+        20  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/close.c:close [/lib/x86_64-linux-gnu/ld-2.27.so]
+        20  /build/glibc-OTsEL5/glibc-2.27/elf/../elf/dl-tls.c:_dl_add_to_slotinfo [/lib/x86_64-linux-gnu/ld-2.27.so]
+        19  ???:0x0000000000001090 [/lib/x86_64-linux-gnu/ld-2.27.so]
+        18  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-memset.h:memset [/lib/x86_64-linux-gnu/libc-2.27.so]
+        17  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_sync@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.27.so]
+        17  /usr/lib/gcc/x86_64-linux-gnu/7/include/smmintrin.h:__strcspn_sse42
+        17  ???:0x00000000000010c0 [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+        17  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:puts
+        17  /build/glibc-OTsEL5/glibc-2.27/time/../sysdeps/unix/sysv/linux/x86/time.c:time [/lib/x86_64-linux-gnu/libc-2.27.so]
+        17  ???:0x000000000000bd10 [/lib/x86_64-linux-gnu/libm-2.27.so]
+        17  ???:0x0000000000000640 [/usr/lib/valgrind/vgpreload_core-amd64-linux.so]
+        17  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_default_uflow [/lib/x86_64-linux-gnu/libc-2.27.so]
+        17  /build/glibc-OTsEL5/glibc-2.27/elf/../misc/sbrk.c:sbrk [/lib/x86_64-linux-gnu/ld-2.27.so]
+        16  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-memmove.h:memcpy@@GLIBC_2.14 [/lib/x86_64-linux-gnu/libc-2.27.so]
+        16  /build/glibc-OTsEL5/glibc-2.27/ctype/ctype-info.c:__ctype_init [/lib/x86_64-linux-gnu/libc-2.27.so]
+        16  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-memmove.h:mempcpy [/lib/x86_64-linux-gnu/libc-2.27.so]
+        16  /build/glibc-OTsEL5/glibc-2.27/time/../sysdeps/unix/sysv/linux/x86/gettimeofday.c:gettimeofday [/lib/x86_64-linux-gnu/libc-2.27.so]
+        15  ???:0x0000000004feb2c0 [???]
+        15  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_setbuf@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.27.so]
+        15  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_read [/lib/x86_64-linux-gnu/libc-2.27.so]
+        15  /build/glibc-OTsEL5/glibc-2.27/elf/dl-error-skeleton.c:_dl_receive_error [/lib/x86_64-linux-gnu/ld-2.27.so]
+        14  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/ifunc-avx2.h:wmemchr [/lib/x86_64-linux-gnu/libc-2.27.so]
+        14  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/ifunc-avx2.h:wcschr [/lib/x86_64-linux-gnu/libc-2.27.so]
+        14  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c:_IO_file_close [/lib/x86_64-linux-gnu/libc-2.27.so]
+        14  /build/glibc-OTsEL5/glibc-2.27/stdlib/../sysdeps/ieee754/dbl-64/mpn2dbl.c:__mpn_construct_double [/lib/x86_64-linux-gnu/libc-2.27.so]
+        14  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h:strnlen [/lib/x86_64-linux-gnu/libc-2.27.so]
+        14  /build/glibc-OTsEL5/glibc-2.27/malloc/morecore.c:__default_morecore [/lib/x86_64-linux-gnu/libc-2.27.so]
+        14  /build/glibc-OTsEL5/glibc-2.27/elf/rtld.c:map_doit [/lib/x86_64-linux-gnu/ld-2.27.so]
+        14  /build/glibc-OTsEL5/glibc-2.27/malloc/hooks.c:malloc_hook_ini [/lib/x86_64-linux-gnu/libc-2.27.so]
+        14  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/unix/sysv/linux/not-errno.h:_dl_load_cache_lookup
+        14  ???:0x0000000004feb2c8 [???]
+        14  /build/glibc-OTsEL5/glibc-2.27/stdlib/../include/rounding-mode.h:round_and_return
+        13  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/wordsize-64/lxstat.c:open [/lib/x86_64-linux-gnu/ld-2.27.so]
+        12  ???:0x0000000000000600 [/usr/lib/valgrind/vgpreload_core-amd64-linux.so]
+        12  ???:0x000000000000bcd0 [/lib/x86_64-linux-gnu/libm-2.27.so]
+        12  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-memcmp.h:bcmp [/lib/x86_64-linux-gnu/libc-2.27.so]
+        12  /build/glibc-OTsEL5/glibc-2.27/elf/rtld.c:rtld_lock_default_unlock_recursive [/lib/x86_64-linux-gnu/ld-2.27.so]
+        12  ???:0x0000000000001080 [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+        12  /build/glibc-OTsEL5/glibc-2.27/elf/rtld.c:rtld_lock_default_lock_recursive [/lib/x86_64-linux-gnu/ld-2.27.so]
+        11  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/unix/sysv/linux/x86_64/brk.c:brk [/lib/x86_64-linux-gnu/ld-2.27.so]
+        11  /usr/lib/gcc/x86_64-linux-gnu/7/include/tmmintrin.h:__strspn_sse42
+        11  /build/glibc-OTsEL5/glibc-2.27/stdlib/cxa_thread_atexit_impl.c:__call_tls_dtors [/lib/x86_64-linux-gnu/libc-2.27.so]
+        11  ???:_start [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+        11  /usr/lib/gcc/x86_64-linux-gnu/7/include/tmmintrin.h:__strcspn_sse42
+        10  /build/glibc-OTsEL5/glibc-2.27/elf/dl-cache.c:_dl_unload_cache [/lib/x86_64-linux-gnu/ld-2.27.so]
+        10  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:fread
+        10  /build/glibc-OTsEL5/glibc-2.27/elf/rtld.c:version_check_doit [/lib/x86_64-linux-gnu/ld-2.27.so]
+        10  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:__overflow [/lib/x86_64-linux-gnu/libc-2.27.so]
+        10  /build/glibc-OTsEL5/glibc-2.27/stdlib/../sysdeps/generic/get-rounding-mode.h:round_and_return
+         9  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcmp.c:strcmp [/lib/x86_64-linux-gnu/libc-2.27.so]
+         9  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_file_xsgetn
+         8  ???:0x0000000000000ff0 [/home/robbie/Documents/ECPE251/ecpe_251-high-performance-computing/Project01/main]
+         8  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h:powf@@GLIBC_2.27 [/lib/x86_64-linux-gnu/libm-2.27.so]
+         8  /build/glibc-OTsEL5/glibc-2.27/setjmp/sigjmp.c:__sigjmp_save [/lib/x86_64-linux-gnu/libc-2.27.so]
+         8  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_file_underflow@@GLIBC_2.2.5
+         8  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-unaligned-ssse3.h:strcat [/lib/x86_64-linux-gnu/libc-2.27.so]
+         8  ???:0x000000000000bc40 [/lib/x86_64-linux-gnu/libm-2.27.so]
+         8  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-unaligned-ssse3.h:stpncpy [/lib/x86_64-linux-gnu/libc-2.27.so]
+         8  /usr/lib/gcc/x86_64-linux-gnu/7/include/emmintrin.h:__strspn_sse42
+         8  /usr/lib/gcc/x86_64-linux-gnu/7/include/emmintrin.h:__strcspn_sse42
+         8  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strncmp.c:strncmp [/lib/x86_64-linux-gnu/libc-2.27.so]
+         8  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/access.c:access [/lib/x86_64-linux-gnu/ld-2.27.so]
+         8  /build/glibc-OTsEL5/glibc-2.27/stdlib/../stdlib/strtol.c:strtol [/lib/x86_64-linux-gnu/libc-2.27.so]
+         8  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_cleanup
+         8  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-unaligned-ssse3.h:strcpy [/lib/x86_64-linux-gnu/libc-2.27.so]
+         8  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-unaligned-ssse3.h:stpcpy [/lib/x86_64-linux-gnu/libc-2.27.so]
+         8  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strchr.c:index [/lib/x86_64-linux-gnu/libc-2.27.so]
+         8  ???:0x0000000000000570 [/usr/lib/valgrind/vgpreload_core-amd64-linux.so]
+         8  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-unaligned-ssse3.h:strncpy [/lib/x86_64-linux-gnu/libc-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma4.h:__pow_finite [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma4.h:__asin_finite [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h:exp2f@@GLIBC_2.27 [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h:rindex [/lib/x86_64-linux-gnu/libc-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h:memrchr [/lib/x86_64-linux-gnu/libc-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma4.h:__acos_finite [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-avx-fma4.h:cos [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h:logf@@GLIBC_2.27 [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-avx-fma4.h:__atan2_finite [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/ifunc-avx2.h:wcslen [/lib/x86_64-linux-gnu/libc-2.27.so]
+         7  /usr/lib/gcc/x86_64-linux-gnu/7/include/smmintrin.h:__strspn_sse42
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h:log2f@@GLIBC_2.27 [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c:_IO_sgetn [/lib/x86_64-linux-gnu/libc-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:__overflow
+         7  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_default_setbuf
+         7  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_sgetn
+         7  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h:strchrnul [/lib/x86_64-linux-gnu/libc-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h:sincosf [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:__underflow
+         7  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_default_uflow
+         7  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:__uflow
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h:cosf [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-avx-fma4.h:__exp_finite [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-avx-fma4.h:sin [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h:expf@@GLIBC_2.27 [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-avx-fma4.h:__log_finite [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h:memchr [/lib/x86_64-linux-gnu/libc-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h:strlen [/lib/x86_64-linux-gnu/libc-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h:sinf [/lib/x86_64-linux-gnu/libm-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/wcsnlen.c:wcsnlen [/lib/x86_64-linux-gnu/libc-2.27.so]
+         7  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h:rawmemchr [/lib/x86_64-linux-gnu/libc-2.27.so]
+         6  ???:0x0000000004a2a520 [???]
+         6  /build/glibc-OTsEL5/glibc-2.27/elf/../elf/dl-tls.c:_dl_next_tls_modid [/lib/x86_64-linux-gnu/ld-2.27.so]
+         6  ???:0x0000000000108998 [???]
+         6  /build/glibc-OTsEL5/glibc-2.27/libio/../misc/sys/sysmacros.h:_IO_file_doallocate
+         6  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86/dl-hwcap.h:_dl_important_hwcaps
+         6  ???:0x0000000004c377f0 [???]
+         6  /build/glibc-OTsEL5/glibc-2.27/string/strtok.c:strtok [/lib/x86_64-linux-gnu/libc-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/posix/../sysdeps/unix/syscall-template.S:uname [/lib/x86_64-linux-gnu/ld-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/stdlib/exit.c:exit [/lib/x86_64-linux-gnu/libc-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-sse4_1.h:trunc [/lib/x86_64-linux-gnu/libm-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-sse4_2.h:strcspn [/lib/x86_64-linux-gnu/libc-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-sse4_2.h:strspn [/lib/x86_64-linux-gnu/libc-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/posix/../sysdeps/unix/sysv/linux/_exit.c:_Exit [/lib/x86_64-linux-gnu/libc-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-sse4_2.h:strpbrk [/lib/x86_64-linux-gnu/libc-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-strcasecmp.h:strcasecmp_l [/lib/x86_64-linux-gnu/libc-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-sse4_1.h:ceil [/lib/x86_64-linux-gnu/libm-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-strcasecmp.h:strcasecmp [/lib/x86_64-linux-gnu/libc-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-sse4_1.h:floor [/lib/x86_64-linux-gnu/libm-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-sse4_1.h:rint [/lib/x86_64-linux-gnu/libm-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-strcasecmp.h:strncasecmp_l [/lib/x86_64-linux-gnu/libc-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-sse4_1.h:rintf [/lib/x86_64-linux-gnu/libm-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-strcasecmp.h:strncasecmp [/lib/x86_64-linux-gnu/libc-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-sse4_1.h:truncf [/lib/x86_64-linux-gnu/libm-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-sse4_1.h:floorf [/lib/x86_64-linux-gnu/libm-2.27.so]
+         5  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-sse4_1.h:ceilf [/lib/x86_64-linux-gnu/libm-2.27.so]
+         4  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h:_IO_flush_all_lockp
+         4  /build/glibc-OTsEL5/glibc-2.27/elf/dl-minimal.c:free [/lib/x86_64-linux-gnu/ld-2.27.so]
+         4  /build/glibc-OTsEL5/glibc-2.27/stdlib/strtod.c:strtod [/lib/x86_64-linux-gnu/libc-2.27.so]
+         4  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/unix/sysv/linux/not-errno.h:_dl_important_hwcaps
+         4  /build/glibc-OTsEL5/glibc-2.27/elf/../elf/dl-tls.c:_dl_count_modids [/lib/x86_64-linux-gnu/ld-2.27.so]
+         3  ???:0x0000000000109ec4 [???]
+         3  ???:0x0000000004cf62f8 [???]
+         3  /build/glibc-OTsEL5/glibc-2.27/malloc/arena.c:malloc_hook_ini
+         3  ???:0x0000000004a2a7a8 [???]
+         3  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/unix/sysv/linux/dl-osinfo.h:dl_main
+         2  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86_64/dl-machine.h:_dl_fixup
+         2  /build/glibc-OTsEL5/glibc-2.27/elf/setup-vdso.h:dl_main
+         2  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/wmemchr.c:wmemchr
+         2  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/wcschr.c:wcschr
+         2  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strnlen.c:strnlen
+         2  /build/glibc-OTsEL5/glibc-2.27/setjmp/../sysdeps/x86_64/bsd-_setjmp.S:_setjmp [/lib/x86_64-linux-gnu/libc-2.27.so]
+         2  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_sysdep_start
+         2  /build/glibc-OTsEL5/glibc-2.27/malloc/arena.c:sysmalloc
+         2  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/wmemset.c:wmemset
+         2  /build/glibc-OTsEL5/glibc-2.27/elf/dl-debug.c:_dl_debug_state [/lib/x86_64-linux-gnu/ld-2.27.so]
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_log.c:__log_finite
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcat.c:strcat
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcspn.c:strcspn
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_sin.c:cos
+         1  ???:0x0000000004000f00 [???]
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/rawmemchr.c:rawmemchr
+         1  ???:0x0000000004a2a560 [???]
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_logf.c:logf@@GLIBC_2.27
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memrchr.c:memrchr
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/stpncpy.c:stpncpy
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_log2f.c:log2f@@GLIBC_2.27
+         1  ???:0x0000000000108af0 [???]
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strchrnul.c:strchrnul
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strncpy.c:strncpy
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_ceil.c:ceil
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_truncf.c:truncf
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_floorf.c:floorf
+         1  ???:0x0000000004c37a70 [???]
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcasecmp_l.c:strcasecmp_l
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/stpcpy.c:stpcpy
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_atan2.c:__atan2_finite
+         1  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/wcslen.c:wcslen
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_trunc.c:trunc
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_cosf.c:cosf
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_pow.c:__pow_finite
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strrchr.c:rindex
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strspn.c:strspn
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_sinf.c:sinf
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_exp2f.c:exp2f@@GLIBC_2.27
+         1  /build/glibc-OTsEL5/glibc-2.27/elf/../elf/dl-sysdep.c:_dl_sysdep_start_cleanup [/lib/x86_64-linux-gnu/ld-2.27.so]
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_exp.c:__exp_finite
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_floor.c:floor
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memchr.c:memchr
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_sincosf.c:sincosf
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_asin.c:__asin_finite
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memcmp.c:bcmp
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strncase.c:strncasecmp
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcpy.c:strcpy
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strncase_l.c:strncasecmp_l
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_expf.c:expf@@GLIBC_2.27
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_asin.c:__acos_finite
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_ceilf.c:ceilf
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_rint.c:rint
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_rintf.c:rintf
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strpbrk.c:strpbrk
+         1  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_sin.c:sin
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcasecmp.c:strcasecmp
+         1  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strlen.c:strlen
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/lib/gcc/x86_64-linux-gnu/7/include/tmmintrin.h
+--------------------------------------------------------------------------------
+Ir 
+
+-- line 130 ----------------------------------------
+ .  _mm_mulhrs_pi16 (__m64 __X, __m64 __Y)
+ .  {
+ .    return (__m64) __builtin_ia32_pmulhrsw ((__v4hi)__X, (__v4hi)__Y);
+ .  }
+ .  
+ .  extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+ .  _mm_shuffle_epi8 (__m128i __X, __m128i __Y)
+ .  {
+22    return (__m128i) __builtin_ia32_pshufb128 ((__v16qi)__X, (__v16qi)__Y);
+ .  }
+ .  
+ .  extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+ .  _mm_shuffle_pi8 (__m64 __X, __m64 __Y)
+ .  {
+ .    return (__m64) __builtin_ia32_pshufb ((__v8qi)__X, (__v8qi)__Y);
+ .  }
+ .  
+-- line 146 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/lib/gcc/x86_64-linux-gnu/7/include/smmintrin.h
+--------------------------------------------------------------------------------
+Ir 
+
+-- line 625 ----------------------------------------
+ .    return (__m128i) __builtin_ia32_pcmpistrm128 ((__v16qi)__X,
+ .  						(__v16qi)__Y,
+ .  						__M);
+ .  }
+ .  
+ .  extern __inline int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+ .  _mm_cmpistri (__m128i __X, __m128i __Y, const int __M)
+ .  {
+16    return __builtin_ia32_pcmpistri128 ((__v16qi)__X,
+ .  				      (__v16qi)__Y,
+ .  				      __M);
+ .  }
+ .  
+ .  extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+ .  _mm_cmpestrm (__m128i __X, int __LX, __m128i __Y, int __LY, const int __M)
+ .  {
+ .    return (__m128i) __builtin_ia32_pcmpestrm128 ((__v16qi)__X, __LX,
+-- line 641 ----------------------------------------
+-- line 678 ----------------------------------------
+ .    return __builtin_ia32_pcmpistria128 ((__v16qi)__X,
+ .  				       (__v16qi)__Y,
+ .  				       __M);
+ .  }
+ .  
+ .  extern __inline int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+ .  _mm_cmpistrc (__m128i __X, __m128i __Y, const int __M)
+ .  {
+ 4    return __builtin_ia32_pcmpistric128 ((__v16qi)__X,
+ .  				       (__v16qi)__Y,
+ .  				       __M);
+ .  }
+ .  
+ .  extern __inline int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+ .  _mm_cmpistro (__m128i __X, __m128i __Y, const int __M)
+ .  {
+ .    return __builtin_ia32_pcmpistrio128 ((__v16qi)__X,
+-- line 694 ----------------------------------------
+-- line 702 ----------------------------------------
+ .    return __builtin_ia32_pcmpistris128 ((__v16qi)__X,
+ .  				       (__v16qi)__Y,
+ .  				       __M);
+ .  }
+ .  
+ .  extern __inline int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+ .  _mm_cmpistrz (__m128i __X, __m128i __Y, const int __M)
+ .  {
+ 4    return __builtin_ia32_pcmpistriz128 ((__v16qi)__X,
+ .  				       (__v16qi)__Y,
+ .  				       __M);
+ .  }
+ .  
+ .  extern __inline int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+ .  _mm_cmpestra (__m128i __X, int __LX, __m128i __Y, int __LY, const int __M)
+ .  {
+ .    return __builtin_ia32_pcmpestria128 ((__v16qi)__X, __LX,
+-- line 718 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/lib/gcc/x86_64-linux-gnu/7/include/emmintrin.h
+--------------------------------------------------------------------------------
+Ir 
+
+-- line 694 ----------------------------------------
+ .  _mm_load_si128 (__m128i const *__P)
+ .  {
+ .    return *__P;
+ .  }
+ .  
+ .  extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+ .  _mm_loadu_si128 (__m128i_u const *__P)
+ .  {
+16    return *__P;
+ .  }
+ .  
+ .  extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+ .  _mm_loadl_epi64 (__m128i_u const *__P)
+ .  {
+ .    return _mm_set_epi64 ((__m64)0LL, *(__m64_u *)__P);
+ .  }
+ .  
+-- line 710 ----------------------------------------
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  /build/glibc-OTsEL5/glibc-2.27/csu/../csu/init-first.c
+  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/wcsnlen.c
+  /build/glibc-OTsEL5/glibc-2.27/libio/fileops.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-tunables.c
+  /build/glibc-OTsEL5/glibc-2.27/stdlib/../sysdeps/x86_64/lshift.S
+  /build/glibc-OTsEL5/glibc-2.27/libio/iogetline.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/do-rel.h
+  /build/glibc-OTsEL5/glibc-2.27/misc/init-misc.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/memcmp.S
+  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/wcschr.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memchr-avx2.S
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strlen-avx2.S
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/stpcpy.c
+  /build/glibc-OTsEL5/glibc-2.27/stdlib/exit.c
+  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/close.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcat.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strncase.c
+  /build/glibc-OTsEL5/glibc-2.27/math/w_atan2_compat.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcmp.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcspn-c.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/./dl-map-segments.h
+  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/wordsize-64/xstat.c
+  /build/glibc-OTsEL5/glibc-2.27/misc/../sysdeps/unix/sysv/linux/x86_64/brk.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-tunables.h
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/i386/fpu/fenv_private.h
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strchr-avx2.S
+  /build/glibc-OTsEL5/glibc-2.27/libio/iofgets.c
+  /build/glibc-OTsEL5/glibc-2.27/stdio-common/_itoa.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-open.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strspn.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcasecmp.c
+  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/ifunc-wmemset.h
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-minimal.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_rint.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_cosf.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_exp2f.c
+  /build/glibc-OTsEL5/glibc-2.27/string/strtok.c
+  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/write.c
+  /build/glibc-OTsEL5/glibc-2.27/posix/../sysdeps/unix/sysv/linux/_exit.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86/dl-procinfo.h
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_pow.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strrchr.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-lookup.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-addr.c
+  /build/glibc-OTsEL5/glibc-2.27/malloc/hooks.c
+  /build/glibc-OTsEL5/glibc-2.27/nptl/unregister-atfork.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-reloc.c
+  /build/glibc-OTsEL5/glibc-2.27/stdlib/../sysdeps/generic/get-rounding-mode.h
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strchr.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../misc/sbrk.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/unix/sysv/linux/dl-osinfo.h
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-debug.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/ieee754/dbl-64/e_atan2.c
+  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/wordsize-64/lxstat.c
+  /build/glibc-OTsEL5/glibc-2.27/libio/ioputs.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-environ.c
+  /build/glibc-OTsEL5/glibc-2.27/libio/iofopen.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/ieee754/dbl-64/e_exp.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memrchr.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../elf/dl-sysdep.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-deps.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strchrnul.c
+  /build/glibc-OTsEL5/glibc-2.27/setjmp/sigjmp.c
+  /build/glibc-OTsEL5/glibc-2.27/stdio-common/printf-parse.h
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strspn-c.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcpy.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_ceilf.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86/dl-hwcap.h
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_truncf.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-memmove.h
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/rawmemchr.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_sincosf.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-memset.h
+  /build/glibc-OTsEL5/glibc-2.27/libio/../misc/sys/sysmacros.h
+  /build/glibc-OTsEL5/glibc-2.27/stdlib/cxa_finalize.c
+  /build/glibc-OTsEL5/glibc-2.27/ctype/ctype-info.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-avx-fma4.h
+  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/unix/sysv/linux/not-errno.h
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strnlen.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_asin.c
+  /build/glibc-OTsEL5/glibc-2.27/math/w_exp_compat.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-unaligned-ssse3.h
+  /build/glibc-OTsEL5/glibc-2.27/stdlib/cxa_atexit.c
+  /build/glibc-OTsEL5/glibc-2.27/malloc/morecore.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-load.c
+  /build/glibc-OTsEL5/glibc-2.27/stdlib/../stdlib/strtol_l.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/strcmp.S
+  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/wmemchr.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/rtld.c
+  /build/glibc-OTsEL5/glibc-2.27/libio/iofread.c
+  /build/glibc-OTsEL5/glibc-2.27/libio/genops.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../bits/stdlib-bsearch.h
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strncase_l.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_log.c
+  /build/glibc-OTsEL5/glibc-2.27/debug/../libio/libioP.h
+  /build/glibc-OTsEL5/glibc-2.27/string/../string/strstr.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../elf/dl-tls.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/unix/sysv/linux/x86_64/brk.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-cache.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/ieee754/dbl-64/wordsize-64/s_round.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strlen.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../elf/dl-runtime.c
+  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/read.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_expf.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86/cpu-features.c
+  /build/glibc-OTsEL5/glibc-2.27/malloc/arena.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_sin.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/generic/ldsodefs.h
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_logf.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-fini.c
+  /build/glibc-OTsEL5/glibc-2.27/stdlib/strtod_l.c
+  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/access.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_floor.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/../strlen.S
+  /build/glibc-OTsEL5/glibc-2.27/stdlib/../sysdeps/ieee754/dbl-64/mpn2dbl.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memchr.c
+  /build/glibc-OTsEL5/glibc-2.27/csu/../csu/libc-start.c
+  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c
+  /build/glibc-OTsEL5/glibc-2.27/libio/iofwrite.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c
+  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/wmemset.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_log2f.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strncmp.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-version.c
+  /build/glibc-OTsEL5/glibc-2.27/stdlib/../include/rounding-mode.h
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-memcmp.h
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_ceil.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma4.h
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_sinf.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-sort-maps.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcspn.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strpbrk.c
+  /build/glibc-OTsEL5/glibc-2.27/libio/iofclose.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-misc.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_trunc.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strrchr-avx2.S
+  /build/glibc-OTsEL5/glibc-2.27/elf/get-dynamic-info.h
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-error-skeleton.c
+  /build/glibc-OTsEL5/glibc-2.27/misc/../sysdeps/unix/syscall-template.S
+  /build/glibc-OTsEL5/glibc-2.27/time/../sysdeps/unix/sysv/linux/x86/gettimeofday.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/unix/sysv/linux/dl-vdso.c
+  /build/glibc-OTsEL5/glibc-2.27/string/strdup.c
+  /build/glibc-OTsEL5/glibc-2.27/setjmp/../sysdeps/x86_64/bsd-_setjmp.S
+  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/wcslen.c
+  /build/glibc-OTsEL5/glibc-2.27/csu/../sysdeps/generic/dl-hash.h
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_atan2.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_floorf.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86_64/dl-machine.h
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcasecmp_l.c
+  /build/glibc-OTsEL5/glibc-2.27/time/../sysdeps/generic/dl-hash.h
+  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/x86_64/dl-trampoline.h
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memcmp.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/./dl-load.h
+  /build/glibc-OTsEL5/glibc-2.27/elf/setup-vdso.h
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-strcasecmp.h
+  /build/glibc-OTsEL5/glibc-2.27/stdlib/cxa_thread_atexit_impl.c
+  /build/glibc-OTsEL5/glibc-2.27/libio/filedoalloc.c
+  /build/glibc-OTsEL5/glibc-2.27/string/strtok_r.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/stpncpy.c
+  /build/glibc-OTsEL5/glibc-2.27/misc/sbrk.c
+  /build/glibc-OTsEL5/glibc-2.27/time/../sysdeps/unix/sysv/linux/x86/time.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/../sysdeps/posix/dl-fileid.h
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/s_rintf.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-fma.h
+  /build/glibc-OTsEL5/glibc-2.27/stdio-common/vfprintf.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-sse4_2.h
+  /build/glibc-OTsEL5/glibc-2.27/stdlib/strtod.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-hwcaps.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/ifunc-sse4_1.h
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/../strchr.S
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/strcspn.S
+  /build/glibc-OTsEL5/glibc-2.27/misc/../sysdeps/unix/sysv/linux/mmap64.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86/cacheinfo.c
+  /build/glibc-OTsEL5/glibc-2.27/debug/fprintf_chk.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/generic/math_private_calls.h
+  /build/glibc-OTsEL5/glibc-2.27/csu/../sysdeps/unix/sysv/linux/x86_64/init-first.c
+  /build/glibc-OTsEL5/glibc-2.27/stdio-common/../libio/libioP.h
+  /build/glibc-OTsEL5/glibc-2.27/wcsmbs/../sysdeps/x86_64/multiarch/ifunc-avx2.h
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-object.c
+  /build/glibc-OTsEL5/glibc-2.27/elf/dl-init.c
+  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/x86_64/fpu/multiarch/e_exp.c
+  /build/glibc-OTsEL5/glibc-2.27/setjmp/../sysdeps/x86_64/setjmp.S
+  /build/glibc-OTsEL5/glibc-2.27/stdlib/../stdlib/strtol.c
+  /build/glibc-OTsEL5/glibc-2.27/posix/../sysdeps/unix/syscall-template.S
+  /build/glibc-OTsEL5/glibc-2.27/malloc/malloc.c
+  /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strncpy.c
+  /build/glibc-OTsEL5/glibc-2.27/io/../sysdeps/unix/sysv/linux/open64.c
+  /build/glibc-OTsEL5/glibc-2.27/libio/libioP.h
+
+--------------------------------------------------------------------------------
+Ir 
+--------------------------------------------------------------------------------
+ 0  percentage of events annotated
+

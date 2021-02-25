@@ -1,0 +1,1 @@
+run with ./test filepath sigma blocksize

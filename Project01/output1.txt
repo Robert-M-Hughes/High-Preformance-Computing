@@ -1,0 +1,35 @@
+--------------------------------------------------------------------------------
+I1 cache:         32768 B, 64 B, 8-way associative
+D1 cache:         32768 B, 64 B, 8-way associative
+LL cache:         3145728 B, 64 B, 12-way associative
+Command:          ./main Lenna_org_256.pgm 0.6
+Data file:        cachegrind1.out
+Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
+Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
+Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw Bc Bcm Bi Bim
+Thresholds:       0.1 100 100 100 100 100 100 100 100 100 100 100 100
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+        Ir  I1mr  ILmr        Dr   D1mr  DLmr        Dw   D1mw   DLmw        Bc     Bcm      Bi Bim 
+--------------------------------------------------------------------------------
+32,426,698 1,715 1,572 4,293,590 56,578 3,605 1,046,640 36,087 29,344 5,706,369 251,835 131,860 256  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+        Ir I1mr ILmr        Dr   D1mr DLmr      Dw  D1mw  DLmw        Bc     Bcm      Bi Bim  file:function
+--------------------------------------------------------------------------------
+12,316,238    8    6 1,571,856  8,196    0 131,102 8,192 8,192 2,620,922 131,098       0   0  ???:convolveHoriz
+ 9,563,744    6    5   785,424  8,197    0 131,092 8,192 8,192 1,441,796     549       0   0  ???:convolveVert
+ 5,424,797  101  101   972,140  2,762  344 196,608     0     0 1,187,271  86,906       0   0  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/ieee754/dbl-64/e_atan2.c:__ieee754_atan2_fma
+ 1,835,221   17   17   393,265  8,202    1 196,660 8,195 8,192   131,080   2,429       0   0  ???:main
+ 1,638,876    3    3   175,462      2    0 262,144     0     0   177,687  24,537       0   0  /build/glibc-OTsEL5/glibc-2.27/math/w_atan2_compat.c:atan2
+   663,996    7    6    98,346 24,594    0  24,642 6,088     0    24,600      23       0   0  ???:write_image_template
+   342,380    0    0    34,238      0    0  68,476     0     0    68,476      30       0   0  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/i386/fpu/fenv_private.h:__ieee754_atan2_fma
+   171,190    2    2    62,468      2    1       0     0     0         0       0       0   0  /build/glibc-OTsEL5/glibc-2.27/math/../sysdeps/generic/math_private_calls.h:__ieee754_atan2_fma
+   131,475   62   37   131,356     67    0      28     1     1        15       8 131,313  53  ???:???
+    77,890    8    8     4,108    963  959  16,392 4,098 4,096     4,102      11       0   0  ???:read_image_template
+    59,300    9    9    14,225  1,065  870      17     3     0    13,294   1,996       2   2  /build/glibc-OTsEL5/glibc-2.27/elf/dl-addr.c:_dl_addr
+    38,863   19   19    14,191    347  236   3,891    11     0     6,816     425       0   0  /build/glibc-OTsEL5/glibc-2.27/elf/dl-lookup.c:do_lookup_x
+

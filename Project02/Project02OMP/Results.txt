@@ -1,0 +1,9 @@
+Lenna_org_256.pgm, 1, 2, 0.600000, 0.077218 
+Lenna_org_256.pgm, 1, 2, 0.600000, 0.089747 
+/home/robbie/Lenna_Images/Lenna_org_1024.pgm, 2, 2, 0.600000, 0.904873 
+/home/robbie/Lenna_Images/Lenna_org_2048.pgm, 2, 2, 0.600000, 3.150231 
+/home/robbie/Lenna_Images/Lenna_org_4096.pgm, 2, 2, 0.600000, 13.656162 
+/home/robbie/Lenna_Images/Lenna_org_5120.pgm, 2, 2, 0.600000, 22.797174 
+/home/robbie/Lenna_Images/Lenna_org_256.pgm, 4, 2, 0.600000, 0.082977 
+/home/robbie/Lenna_Images/Lenna_org_1024.pgm, 4, 2, 0.600000, 1.011807 
+/home/robbie/Lenna_Images/Lenna_org_1024.pgm, 1, 2, 0.600000, 0.874366 
